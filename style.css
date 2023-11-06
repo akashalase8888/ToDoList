@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(360deg, rgb(50, 28, 25, 1.0),rgb(121, 38, 47, 1.0),rgb(133, 15, 21, 1.0));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.to-do{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 20px;
+}
+.task-div
+{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	background-color: whitesmoke;
+	height: 30px;
+	position: relative;
+	border-radius: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+button
+{
+	position: absolute;
+	right: 0;
+	border: ;
+	outline: ;
+	height: 30px;
+	border-radius: 20px;
+	width: 70px;
+	background-color: orange;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+input{
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+ul li{
+	list-style-type: none;
+	padding: 8px 25px 10px;
+	position: relative;
+}
+ul li::before{
+	content: '';
+	background-image: url("https://cdn-icons-png.flaticon.com/512/71/71397.png");
+	background-size: contain;
+	height: 13px;
+	width: 13px;
+	position: absolute;
+	top: 17;
+	left: 0;
+}
+ul li.checked{
+	color: darkgray;
+	text-decoration: line-through;
+}
+ul li.checked::before{
+	background-image: url("https://www.iconpacks.net/icons/5/free-greem-check-mark-approval-icon-16196-thumb.png");
+
+}
+span{
+	position: absolute;
+	right: 0px;
+	font-size: 10px;
+	top: 10px;
+}
